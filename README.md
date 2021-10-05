@@ -1,2 +1,7 @@
-# SecureScript
-A tool that can encrypt python2 or python3 code with the given password and can reuse with that password
+<h1 align="center">
+  <br>
+  <a href="https://github.com/Mdrasel1230/SecureScript"><img src="https://github.com/Mdrasel1230/SecureScript/blob/main/Secure%20Script.png" alt="SecureScript"></a>
+  <br>
+  SecureScript
+  <br>
+</h1>
