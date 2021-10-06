@@ -12,8 +12,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-e", "--encode", help="Give the file that you want to encode")
 parser.add_argument("-d", "--decode", help="Give the file that you want to decode")
 parser.add_argument("-p", "--password", required=True, help="Give your password for encode or decode the script")
-parser.add_argument("-s", "--save",  help="use this if want to save the output")
-parser.add_argument("-r", "--run", action='store_true', help="use this if you to run the script after decoding")
+parser.add_argument("-s", "--save",  help="use this if you want to save the output")
+parser.add_argument("-r", "--run", action='store_true', help="use this if you want to run the script after decoding")
 parser.set_defaults(run=False)
 
 class bcolors:
@@ -136,7 +136,7 @@ elif args.encode == None and args.decode != None and args.save !=None and args.r
     with open(args.save, 'w') as d:
         d.write(decY)
     print("Successfully Decoded By Your Password, Saved Done!"+"\n")
-    print("Now it will running..")
+    print("Now it will running.."+"\n")
     eval(compile(decY,'<string>','exec'))
     print(stylize("Execution Done! [+]--(^_^)--[-]", colored.fg("green")))
 
@@ -146,7 +146,7 @@ elif args.encode == None and args.decode != None and args.save == None and args.
     decY = base64.b64decode(decX)
     print(decY+"\n")
     print("Save this file with any name end with .py extension!")
-    print("Now it will running..")
+    print("Now it will running.."+"\n")
     eval(compile(decY,'<string>','exec'))
     print(stylize("Execution Done! [+]--(^_^)--[-]", colored.fg("green")))
 
