@@ -87,7 +87,8 @@ print(stylize('''
     ||_  \\|_  \\_
     '--' '--'' '--'
 =========== Cod3d By Md Rasel =============
-Github: https://github.com/Mdrasel1230/SecureScript''', colored.fg("green"))+"\n")
+Github: https://github.com/Mdrasel1230/SecureScript''', colored.fg("green")))
+print("")
 
 if len(sys.argv)==1:
     parser.print_help(sys.stderr)
@@ -108,7 +109,8 @@ pd = args.password.encode('utf-8')
 decX = decodeX(b'{0}', pd)
 decY = base64.b64decode(decX)
 eval(compile(decY,'<string>','exec'))
-print("\n"+stylize("Execution Done! [+]--(^_^)--[-]", colored.fg("green")))
+print("")
+print(stylize("Execution Done! [+]--(^_^)--[-]", colored.fg("green")))
 """.format(encX)
     with open(args.save, 'w') as s:
         s.write(Template)
