@@ -19,6 +19,7 @@
 ```
 git clone https://github.com/Mdrasel1230/SecureScript
 cd SecureScript
+pip install -r requirements.txt
 python2 SecureScript.py
 ```
 
